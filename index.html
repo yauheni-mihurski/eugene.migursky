@@ -119,7 +119,7 @@
     </div>
   </div>
 
-  <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+  <canvas id="unity-canvas" width=540 height=960 tabindex="-1"></canvas>
 
   <script>
     var canvas = document.getElementById("unity-canvas");
@@ -145,12 +145,6 @@
       meta.name = 'viewport';
       meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
       document.getElementsByTagName('head')[0].appendChild(meta);
-      canvas.style.width = "100%";
-      canvas.style.height = "100%";
-      canvas.style.position = "fixed";
-    } else {
-      canvas.style.width = "100vw";
-      canvas.style.height = "100vh";
     }
 
     var script = document.createElement("script");
